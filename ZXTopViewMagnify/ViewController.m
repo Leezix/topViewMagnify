@@ -41,6 +41,10 @@ NSString *const cellID = @"cellID";
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, headerHeight)];
     view.backgroundColor = [UIColor blackColor];
     [self.view addSubview:view];
+    
+    UIImageView *gbView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"708d0ef7f8fdf69b56af65c4ba23587c.jpg"]];
+    gbView.frame = view.frame;
+    [view addSubview:gbView];
 }
 
 - (void)prepareTabelView{
