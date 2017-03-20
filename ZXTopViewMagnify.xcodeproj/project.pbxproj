@@ -24,6 +24,7 @@
 		74F9DF901E7FA26000A0B28D /* UIScreen+HMObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F9DF831E7FA26000A0B28D /* UIScreen+HMObjcSugar.m */; };
 		74F9DF911E7FA26000A0B28D /* UITextField+HMObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F9DF851E7FA26000A0B28D /* UITextField+HMObjcSugar.m */; };
 		74F9DF921E7FA26000A0B28D /* UIView+HMObjcSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F9DF871E7FA26000A0B28D /* UIView+HMObjcSugar.m */; };
+		74F9DF951E7FA76200A0B28D /* ZXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F9DF941E7FA76200A0B28D /* ZXHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		74F9DF851E7FA26000A0B28D /* UITextField+HMObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HMObjcSugar.m"; sourceTree = "<group>"; };
 		74F9DF861E7FA26000A0B28D /* UIView+HMObjcSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HMObjcSugar.h"; sourceTree = "<group>"; };
 		74F9DF871E7FA26000A0B28D /* UIView+HMObjcSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HMObjcSugar.m"; sourceTree = "<group>"; };
+		74F9DF931E7FA76200A0B28D /* ZXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXHomeViewController.h; sourceTree = "<group>"; };
+		74F9DF941E7FA76200A0B28D /* ZXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				74F9DF441E7F892100A0B28D /* LaunchScreen.storyboard */,
 				74F9DF471E7F892100A0B28D /* Info.plist */,
 				74F9DF361E7F892100A0B28D /* Supporting Files */,
+				74F9DF931E7FA76200A0B28D /* ZXHomeViewController.h */,
+				74F9DF941E7FA76200A0B28D /* ZXHomeViewController.m */,
 			);
 			path = ZXTopViewMagnify;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				74F9DF8A1E7FA26000A0B28D /* NSString+HMObjcSugar.m in Sources */,
 				74F9DF381E7F892100A0B28D /* main.m in Sources */,
 				74F9DF8F1E7FA26000A0B28D /* UINavigationController+HMObjcSugar.m in Sources */,
+				74F9DF951E7FA76200A0B28D /* ZXHomeViewController.m in Sources */,
 				74F9DF8C1E7FA26000A0B28D /* UIColor+HMObjcSugar.m in Sources */,
 				74F9DF921E7FA26000A0B28D /* UIView+HMObjcSugar.m in Sources */,
 				74F9DF901E7FA26000A0B28D /* UIScreen+HMObjcSugar.m in Sources */,
