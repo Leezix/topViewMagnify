@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "HMObjcSugar.h"
 
 CGFloat const headerHeight = 200;
 NSString *const cellID = @"cellID";
@@ -39,7 +38,7 @@ NSString *const cellID = @"cellID";
 }
 
 - (void)prepareHeader{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.hm_width, headerHeight)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, headerHeight)];
     view.backgroundColor = [UIColor blackColor];
     [self.view addSubview:view];
 }

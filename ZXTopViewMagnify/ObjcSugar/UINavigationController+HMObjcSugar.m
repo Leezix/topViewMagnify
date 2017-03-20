@@ -23,10 +23,12 @@
         return NO;
     }
     
+    //监听navigationController是否在滑动过程中
     if ([[self.navigationController valueForKey:@"_isTransitioning"] boolValue]) {
         return NO;
     }
     
+    //手势方向错了
     CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
     if (translation.x <= 0) {
         return NO;
@@ -49,6 +51,7 @@
 
 - (void)hm_pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     
+    //interactivePopGestureRecognizer: ios7出来的API, 系统自带手势, 苹果实现了handleNavigationTransition:方法, 实现边缘手势, 滑动返回上一个界面.(我们只需要把边缘手势去掉, 换成我们的全局手势, 依然调用这个handleNavigationTransition方法)
     if (![self.interactivePopGestureRecognizer.view.gestureRecognizers containsObject:self.hm_popGestureRecognizer]) {
         [self.interactivePopGestureRecognizer.view addGestureRecognizer:self.hm_popGestureRecognizer];
         
