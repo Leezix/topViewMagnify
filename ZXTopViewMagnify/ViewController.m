@@ -7,11 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "ZXSugarCode.h"
 
 CGFloat const headerHeight = 200;
 NSString *const cellID = @"cellID";
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property(nonatomic, weak) UIView *headerView;
+@property(nonatomic, weak) UIImageView *imgView;
 
 @end
 
@@ -45,6 +49,13 @@ NSString *const cellID = @"cellID";
     UIImageView *gbView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"708d0ef7f8fdf69b56af65c4ba23587c.jpg"]];
     gbView.frame = view.frame;
     [view addSubview:gbView];
+    
+    self.headerView = view;
+    self.imgView = gbView;
+    
+    //更换fillMode, 以实现放大=.=
+    gbView.contentMode = UIViewContentModeScaleAspectFill;
+    gbView.clipsToBounds = YES;
 }
 
 - (void)prepareTabelView{
@@ -59,6 +70,7 @@ NSString *const cellID = @"cellID";
     table.scrollIndicatorInsets = table.contentInset;
 }
 
+#pragma mark tableViewDatasource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 100;
@@ -68,6 +80,18 @@ NSString *const cellID = @"cellID";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     cell.textLabel.text = @(indexPath.row).stringValue;
     return cell;
+}
+
+#pragma mark tableViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat offset = scrollView.contentOffset.y + scrollView.contentInset.top;
+    
+    if (offset > 0) {
+        NSLog(@"平移");
+    } else {
+        self.headerView.zx_height = -offset + headerHeight;
+        self.imgView.frame = self.headerView.frame;
+    }
 }
 
 - (void)dealloc {
