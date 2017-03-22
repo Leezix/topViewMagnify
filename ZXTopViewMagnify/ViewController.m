@@ -43,7 +43,7 @@ NSString *const cellID = @"cellID";
 
 - (void)prepareHeader{
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, headerHeight)];
-    view.backgroundColor = [UIColor blackColor];
+    view.backgroundColor = [UIColor blueColor];
     [self.view addSubview:view];
     
     UIImageView *gbView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"708d0ef7f8fdf69b56af65c4ba23587c.jpg"]];
@@ -85,13 +85,30 @@ NSString *const cellID = @"cellID";
 #pragma mark tableViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     CGFloat offset = scrollView.contentOffset.y + scrollView.contentInset.top;
-    
+    CGFloat alpha =  1 - offset/136.0;
     if (offset > 0) {
-        NSLog(@"平移");
+        //平移
+        self.imgView.zx_height = headerHeight;
+        self.headerView.zx_height = headerHeight;
+        self.headerView.zx_y = -offset;
+        //有64-200的距离可动, 也就是0~136, alpha:1~0
+        
+        self.headerView.alpha = alpha <= 0? 0: alpha;
+        
+        //移至200 - 20+44的位置.停止移动.并显示导航栏.
+        if(offset >= 136){
+            [self.navigationController setNavigationBarHidden:NO];
+        } else {
+            [self.navigationController setNavigationBarHidden:YES];
+        }
     } else {
+        //放大
+        self.headerView.zx_y = 0;
+        self.headerView.alpha = 1;
         self.headerView.zx_height = -offset + headerHeight;
-        self.imgView.frame = self.headerView.frame;
+        self.imgView.zx_height = self.headerView.zx_height;
     }
+    
 }
 
 - (void)dealloc {
