@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		740035D61E81823200139493 /* UIView+ZXSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 740035D51E81823200139493 /* UIView+ZXSugar.m */; };
+		74D4E0D21E82C43400AF8CFC /* UINavigationController+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D4E0CD1E82C43400AF8CFC /* UINavigationController+Gesture.m */; };
+		74D4E0D31E82C43400AF8CFC /* UIView+ZXSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D4E0D01E82C43400AF8CFC /* UIView+ZXSugar.m */; };
 		74F9DF381E7F892100A0B28D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F9DF371E7F892100A0B28D /* main.m */; };
 		74F9DF3B1E7F892100A0B28D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F9DF3A1E7F892100A0B28D /* AppDelegate.m */; };
 		74F9DF3E1E7F892100A0B28D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F9DF3D1E7F892100A0B28D /* ViewController.m */; };
@@ -15,13 +16,14 @@
 		74F9DF431E7F892100A0B28D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F9DF421E7F892100A0B28D /* Assets.xcassets */; };
 		74F9DF461E7F892100A0B28D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F9DF441E7F892100A0B28D /* LaunchScreen.storyboard */; };
 		74F9DF951E7FA76200A0B28D /* ZXHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F9DF941E7FA76200A0B28D /* ZXHomeViewController.m */; };
-		74F9DFBB1E7FC33F00A0B28D /* UINavigationController+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F9DFBA1E7FC33F00A0B28D /* UINavigationController+Gesture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		740035D41E81823200139493 /* UIView+ZXSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXSugar.h"; sourceTree = "<group>"; };
-		740035D51E81823200139493 /* UIView+ZXSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXSugar.m"; sourceTree = "<group>"; };
-		740035D71E81867A00139493 /* ZXSugarCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSugarCode.h; sourceTree = "<group>"; };
+		74D4E0CC1E82C43400AF8CFC /* UINavigationController+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Gesture.h"; sourceTree = "<group>"; };
+		74D4E0CD1E82C43400AF8CFC /* UINavigationController+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Gesture.m"; sourceTree = "<group>"; };
+		74D4E0CF1E82C43400AF8CFC /* UIView+ZXSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXSugar.h"; sourceTree = "<group>"; };
+		74D4E0D01E82C43400AF8CFC /* UIView+ZXSugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXSugar.m"; sourceTree = "<group>"; };
+		74D4E0D11E82C43400AF8CFC /* ZXSugarCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXSugarCode.h; sourceTree = "<group>"; };
 		74F9DF331E7F892100A0B28D /* ZXTopViewMagnify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXTopViewMagnify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F9DF371E7F892100A0B28D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74F9DF391E7F892100A0B28D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,8 +36,6 @@
 		74F9DF471E7F892100A0B28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74F9DF931E7FA76200A0B28D /* ZXHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXHomeViewController.h; sourceTree = "<group>"; };
 		74F9DF941E7FA76200A0B28D /* ZXHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXHomeViewController.m; sourceTree = "<group>"; };
-		74F9DFB91E7FC33F00A0B28D /* UINavigationController+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Gesture.h"; sourceTree = "<group>"; };
-		74F9DFBA1E7FC33F00A0B28D /* UINavigationController+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Gesture.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,16 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		740035D31E81821200139493 /* category */ = {
+		74D4E0CB1E82C43400AF8CFC /* core */ = {
 			isa = PBXGroup;
 			children = (
-				74F9DFB91E7FC33F00A0B28D /* UINavigationController+Gesture.h */,
-				74F9DFBA1E7FC33F00A0B28D /* UINavigationController+Gesture.m */,
-				740035D41E81823200139493 /* UIView+ZXSugar.h */,
-				740035D51E81823200139493 /* UIView+ZXSugar.m */,
-				740035D71E81867A00139493 /* ZXSugarCode.h */,
+				74D4E0CC1E82C43400AF8CFC /* UINavigationController+Gesture.h */,
+				74D4E0CD1E82C43400AF8CFC /* UINavigationController+Gesture.m */,
+				74D4E0CE1E82C43400AF8CFC /* ZXSugarCode */,
 			);
-			name = category;
+			path = core;
+			sourceTree = "<group>";
+		};
+		74D4E0CE1E82C43400AF8CFC /* ZXSugarCode */ = {
+			isa = PBXGroup;
+			children = (
+				74D4E0CF1E82C43400AF8CFC /* UIView+ZXSugar.h */,
+				74D4E0D01E82C43400AF8CFC /* UIView+ZXSugar.m */,
+				74D4E0D11E82C43400AF8CFC /* ZXSugarCode.h */,
+			);
+			path = ZXSugarCode;
 			sourceTree = "<group>";
 		};
 		74F9DF2A1E7F892100A0B28D = {
@@ -80,7 +88,7 @@
 		74F9DF351E7F892100A0B28D /* ZXTopViewMagnify */ = {
 			isa = PBXGroup;
 			children = (
-				740035D31E81821200139493 /* category */,
+				74D4E0CB1E82C43400AF8CFC /* core */,
 				74F9DF391E7F892100A0B28D /* AppDelegate.h */,
 				74F9DF3A1E7F892100A0B28D /* AppDelegate.m */,
 				74F9DF3C1E7F892100A0B28D /* ViewController.h */,
@@ -176,8 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				74F9DF3E1E7F892100A0B28D /* ViewController.m in Sources */,
-				740035D61E81823200139493 /* UIView+ZXSugar.m in Sources */,
-				74F9DFBB1E7FC33F00A0B28D /* UINavigationController+Gesture.m in Sources */,
+				74D4E0D31E82C43400AF8CFC /* UIView+ZXSugar.m in Sources */,
+				74D4E0D21E82C43400AF8CFC /* UINavigationController+Gesture.m in Sources */,
 				74F9DF3B1E7F892100A0B28D /* AppDelegate.m in Sources */,
 				74F9DF381E7F892100A0B28D /* main.m in Sources */,
 				74F9DF951E7FA76200A0B28D /* ZXHomeViewController.m in Sources */,
